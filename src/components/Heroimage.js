@@ -12,7 +12,6 @@ const Heroimage = () => {
                 <div className='text-2xlg text-white'>Sé tu mismo pero mejor</div>
             </div> 
             <div className='w-full h-[52rem] bg-no-repeat bg-cover bg-left bg-fixed' style={{ backgroundImage: `url(${bgImg})` }}></div>
-           
         </div> 
         </>
      );

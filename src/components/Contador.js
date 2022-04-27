@@ -1,12 +1,18 @@
 import React, {useState} from 'react'
 
-const Contador = () => {
+const Contador = ({stock, onAdd, initial}) => {
 
 const [count, setCount] = useState(0)
 
 const addHandler = () =>{
     console.log("Se está sumado");
+    console.log(count);
+    console.log(stock);
+    if  (count+1 <= stock) { 
     setCount(count +1)
+    
+}
+
 }
 const restHandler = () =>{
     console.log("Se está restando");

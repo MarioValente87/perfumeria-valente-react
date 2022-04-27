@@ -1,13 +1,16 @@
 import React from 'react';
+import ItemList from './ItemList';
+
 
 const ItemListContainer = () => {
-    return ( 
 
-        <>
-        <div className='h-[32rem] bg-slate-900 text-white'>ACÁ IRIA LO QUE SERÍAN LOS ELEMENTOS DEL CARRITO</div>
-        
-        </>
-     );
+    return (
+        <section className="item-list-container">
+          <h2 className="item-list-container__title">Productos destacados</h2>
+    
+          <ItemList />
+        </section>
+      );
 }
- 
+
 export default ItemListContainer;

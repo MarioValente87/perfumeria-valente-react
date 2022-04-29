@@ -1,9 +1,14 @@
+import bvlgari from "../data/bvlgari.jpeg"
+import carolina from "../data/carolinaHerrera.jpeg"
+import versace from "../data/versace.jpeg"
+
+
 export const productList = [
     {
       name: 'Carolina Herrera CH Men EDT 100 ml',
       price: 12093,
       thumbnail:
-        "../data/carolinaHerrera.jpeg",
+        carolina,
       stock: 7,
       id: 1,
     },
@@ -11,15 +16,14 @@ export const productList = [
       name: 'Versace Eau Fraiche',
       price: 17.519,
       thumbnail:
-        'src/data/versace.jpeg',
+        versace,
       stock: 10,
       id: 2,
     },
     {
       name: 'Bvlgari Man In Black',
       price: 23670,
-      thumbnail:
-        'bvlgari.jpeg',
+      thumbnail: bvlgari,
       stock: 6,
       id: 3,
     },

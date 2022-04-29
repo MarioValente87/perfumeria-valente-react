@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Item from './Item.js';
-import { productList } from '../data/data.js';
+import { productList } from '../data/Data.js';
 
 
 const ItemList = () => {
@@ -42,7 +42,7 @@ useEffect(()=>{
                                     price={product.price}
                                     id= {product.id}
                                     stock={product.stock}
-                                     />
+                                    />
                                 </div>
                             )
                         })
@@ -51,7 +51,7 @@ useEffect(()=>{
                 ): ` No hay producto`
             }
         </div>
-     );
+    );
 }
  
 export default ItemList;

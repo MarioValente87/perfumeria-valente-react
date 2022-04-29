@@ -9,12 +9,12 @@ const Item = ({name,thumbnail,price,id,stock}) => {
     console.log(stock);
     return ( 
         <article className='product-card'>
-            <img className='product-card__image' src={thumbnail} alt=""/>
+            <img className='product-card__image' src= {thumbnail} alt="img"/>
             <h3 className='product-card__name'>{name}</h3>
             <span className='product-card__name'>$ {price}</span>
             <Contador stock={stock} onAdd={onAdd} initial={1}/>
         </article>
-     );
+    );
 }
  
 export default Item;

@@ -28,7 +28,7 @@ useEffect(()=>{
 },[]);
 
     return ( 
-        <div className='product-list-container'>
+        <div className='product-list-container grid grid-cols-auto-fill gap-2 '>
             {
                 products.length ? (
                     <>
@@ -42,6 +42,7 @@ useEffect(()=>{
                                     price={product.price}
                                     id= {product.id}
                                     stock={product.stock}
+                                    descripcion= {product.descripcion} 
                                     />
                                 </div>
                             )

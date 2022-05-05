@@ -3,19 +3,26 @@ import Heroimage from './components/Heroimage';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailConteiner from "./components/ItemDetailContainer"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
 
 function App() {
   return (
+    <BrowserRouter>
     <Fragment>
-
-      <NavBar/>
+      <NavBar></NavBar>
       <Heroimage/>
-      <ItemListContainer/>
-    <ItemDetailConteiner/>
+      <Routes>
+        <Route path="/" element={<ItemListContainer/>}></Route>
+        <Route path="/perfume/:perfumeId" element={<ItemDetailConteiner/>}></Route>
+
+      </Routes>
+      
+      
     </Fragment>
+    </BrowserRouter>
   );
 }
 

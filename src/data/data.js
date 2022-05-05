@@ -27,7 +27,7 @@ export const productList = [
         versace,
       stock: 10,
       id: 2,
-      descripcion: "super perfume2",
+      descripcion: "Versace Man Eau Fraiche de Versace es una fragancia de la familia olfativa Amaderada Acuática para Hombres. Versace Man Eau Fraiche se lanzó en 2006. La Nariz detrás de esta fragrancia es Olivier Cresp. Las Notas de Salida son limón (lima ácida), bergamota, carambola, cardamomo y palo de rosa de Brasil; las Notas de Corazón son cedro, estragón, pimienta y salvia; las Notas de Fondo son almizcle, notas amaderadas, azafrán, ámbar y madera de sicómoro.",
     },
     {
       name: 'Bvlgari Man In Black',
@@ -35,7 +35,7 @@ export const productList = [
       thumbnail: bvlgari,
       stock: 6,
       id: 3,
-      descripcion: "super perfume3,"
+      descripcion: "Bvlgari Man In Black de Bvlgari es una fragancia de la familia olfativa Ámbar Floral para Hombres. Bvlgari Man In Black se lanzó en 2014. La Nariz detrás de esta fragrancia es Alberto Morillas. Las Notas de Salida son especias, ron y tabaco; las Notas de Corazón son cuero, iris y nardos; las Notas de Fondo son haba tonka, madera de gaiac y benjuí. "
     },
     {
       name: 'Carolina Herrera 212 Heroes ',
@@ -43,7 +43,7 @@ export const productList = [
       thumbnail: heroe,
       stock: 2,
       id: 4,
-      descripcion: "super perfume4",
+      descripcion: "212 Heroes de Carolina Herrera es una fragancia de la familia olfativa Aromática Frutal para Hombres. Esta fragrancia es nueva. 212 Heroes se lanzó en 2021. 212 Heroes fue creada por Domitille Michalon Bertier, Juliette Karagueuzoglou y Carlos Benaim. Las Notas de Salida son pera, jengibre y marihuana (cannabis); las Notas de Corazón son geranio y salvia; las Notas de Fondo son almizcle y cuero.",
     },
     {
       name: 'Classic Giorgio Armani',
@@ -51,7 +51,7 @@ export const productList = [
       thumbnail: armani,
       stock: 5,
       id: 5,
-      descripcion: "super perfume5",
+      descripcion: "Armani Code de Giorgio Armani es una fragancia de la familia olfativa Ámbar Especiada para Hombres. Armani Code se lanzó en 2004. La Nariz detrás de esta fragrancia es Antoine Lie. Las Notas de Salida son limón (lima ácida) y bergamota; las Notas de Corazón son anís estrellado, flor del olivo y madera de gaiac; las Notas de Fondo son cuero, haba tonka y tabaco. Este perfume es el ganador del premio FiFi Award Fragrance Of The Year Men`s Luxe 2006.",
     },
     {
       name: 'Kenzo Homme Intense',
@@ -59,7 +59,7 @@ export const productList = [
       thumbnail: kenzo,
       stock: 4,
       id: 6,
-      descripcion: "super perfume6",
+      descripcion: "Kenzo Homme Eau de Toilette Intense de Kenzo es una fragancia de la familia olfativa Amaderada Aromática para Hombres. Esta fragrancia es nueva. Kenzo Homme Eau de Toilette Intense se lanzó en 2021. La Nariz detrás de esta fragrancia es Quentin Bisch. Las Notas de Salida son notas marinas, Calypsone, pimienta rosa y especias; las Notas de Corazón son higo, árbol de la higuera y vetiver; las Notas de Fondo son sándalo, Akigalawood y pachulí.",
     },
     {
       name: 'Paco Rabanne Invictus Legend',
@@ -67,7 +67,7 @@ export const productList = [
       thumbnail: paco,
       stock: 9,
       id: 7,
-      descripcion: "super perfume7",
+      descripcion: "nvictus Legend se lanzó en 2019. Invictus Legend fue creada por Domitille Michalon Bertier y Nicolas Beaulieuu. Las Notas de Salida son notas marinas, sal de mar y toronja (pomelo); las Notas de Corazón son hoja de laurel, geranio y especias; las Notas de Fondo son ámbar rojo y madera de gaiac. ",
     },
     {
       name: 'Ralph Lauren Polo Blue',
@@ -75,7 +75,7 @@ export const productList = [
       thumbnail: polo,
       stock: 14,
       id: 8,
-      descripcion: "super perfume8",
+      descripcion: "Con Polo Blue, Ralph Lauren captó la libertad del vasto cielo, la energía del mar abierto y una vigorizante ráfaga de aire fresco que se pueden sentir a través del melón, la albahaca y el abeto blanco. Una fragancia para aquel campeón que vive su vida al máximo.",
     },
     {
       name: 'Ralph Lauren Polo Red',
@@ -83,7 +83,7 @@ export const productList = [
       thumbnail: poloRed,
       stock: 12,
       id: 9,
-      descripcion: "super perfume9",
+      descripcion: "Polo Red es una fragancia genera una sensación adrenalínica en todos los hombres. Esta fascinante combinación del pomelo rojo, la madera roja y el café te estimula a cruzar el límite y te brinda una confianza osada.",
     },
     {
       name: 'Tommy Hilfiger Now',
@@ -91,7 +91,7 @@ export const productList = [
       thumbnail: tommy,
       stock: 22,
       id: 10,
-      descripcion: "super perfume10",
+      descripcion: "Una fragancia picante amaderada de alta energía con un toque masculino moderno. Bergamota cítrica y sabrosa mandarina con infusión de crispgeranio, jengibre picante, cardamomo dulce y maderas cálidas.",
     },
     
     

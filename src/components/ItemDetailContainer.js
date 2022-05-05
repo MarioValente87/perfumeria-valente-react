@@ -1,32 +1,35 @@
 import React, {useEffect, useState} from 'react';
-import ItemDetail from "./ItemDetail";
+import ItemDetail from "./ItemDetail"
 import { productList } from '../data/Data.js'
+import { useParams } from 'react-router-dom';
 
 
 const ItemDetailContainer = () => {
 
+  const {perfumeId} = useParams()
+
   const [detalle, setDetalle] = useState([])
 
   useEffect (()=>{
-    getItem()
-  },[])
-
-  const getItem = () =>{
     const getItemPromise = new Promise((resolve,reject)=>{
-      setTimeout (()=>{
-        resolve(productList.filter(item => item.id === 1))
-      },2000)
-    })
-    getItemPromise.then(data => {
-      setDetalle(data);
-    })
-  }
+        setTimeout (()=>{
+          resolve(productList.find(item => item.id == perfumeId))
+        },2000)
+      })
+      getItemPromise.then(data => {
+        setDetalle(data);
+      })
+    
+  },[perfumeId])
+
+  
 
     return ( 
       <> 
-      <h2 className="item-list-container__title">Detalles producto</h2>
-      <section className="item-list-container container mx-auto flex items-center">
-        {detalle.map (d =><ItemDetail key={d.id} detalles={d}/>)}
+      
+      <section className="item-list-container container mx-auto flex justify-center items-center flex-col text-center mt-6">
+      <h2 className="item-list-container__title text-4xl">Detalles producto</h2>
+        {<ItemDetail key={detalle.id} detalles={detalle}/>}
       
       </section>
       </>

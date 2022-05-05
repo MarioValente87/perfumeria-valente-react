@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
 
@@ -11,8 +12,8 @@ const NavBar = () => {
         </div>
         <div className="flex-none flex-wrap: wrap">
           <ul className="menu menu-horizontal p-0">
-            <li><a href="/#">Inicio</a></li>
-            <li><a href="/#">Perfumes</a></li>
+            <li><Link to="/"> Inicio</Link></li>
+            <li> <Link to="/">Perfumes</Link></li>
             <li><a href="/#">Ubicación</a></li>
             <li><a href="/#">Contacto</a></li>
           </ul>

@@ -28,14 +28,15 @@ useEffect(()=>{
 },[]);
 
     return ( 
-        <div className='product-list-container grid grid-cols-auto-fill gap-2 '>
+        <div className='product-list-container grid grid-cols-3 gap-4 justify-between'>
             {
                 products.length ? (
                     <>
                     {
                         products.map((product)=>{
                             return (
-                                <div key= {product.id}>
+                                <div 
+                                    key= {product.id}>
                                     <Item 
                                     name={product.name}
                                     thumbnail= {product.thumbnail}

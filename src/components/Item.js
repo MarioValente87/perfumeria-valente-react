@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Contador from './Contador';
+
 
 
 const Item = ({name,thumbnail,price,id,stock}) => {
@@ -18,15 +18,13 @@ const Item = ({name,thumbnail,price,id,stock}) => {
             <h2 className="card-title">{name}</h2>
             <span className='product-card__name'>$ {price}</span>
     
-            <div className="card-actions">
-              <Contador stock={stock} onAdd={onAdd} initial={1}/>
-            </div>
+            
             <Link to={`/perfume/${id}`} class="btn btn-primary">Ver Descripción</Link>
           </div>
 </div>
     );
 }
- 
+
 export default Item;
 
 

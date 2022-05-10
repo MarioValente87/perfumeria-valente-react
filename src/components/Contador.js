@@ -24,15 +24,13 @@ const restHandler = () =>{
     return ( 
 
         <>
-        <div className='Container border-2 border-rose-500 flex flex-col w-64 leading-10  text-center'>
-            
-            <div className='bg-slate-500'>Contador</div>
+        <div className='flex flex-wrap gap-4 mt-4'>
             <div className='cantidad flex justify-around'>
-                <button className='text-4xl btn btn-info' onClick={restHandler}>  - </button>
-                <strong className='text-3xl'> {count} </strong>
-                <button className='text-3xl btn btn-info' onClick={addHandler}>  + </button>
+                <button className='btn' onClick={restHandler}>  - </button>
+                <label className='alert alert-white'> {count} </label>
+                <button className='btn' onClick={addHandler}>  + </button>
                 </div>
-            <div className='bg-sky-500/50'>Agregar al Carrito</div>
+            <button className='btn bg-primary text-white btn-block' onClick= {()=> onAdd(count)}>Agregar al Carrito</button>
             
         </div>
         </>

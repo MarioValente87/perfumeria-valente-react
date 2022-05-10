@@ -28,7 +28,7 @@ useEffect(()=>{
 },[]);
 
     return ( 
-        <div className='product-list-container grid grid-cols-3 gap-4 justify-between'>
+        <div className='product-list-container grid grid-cols-3 gap-4'>
             {
                 products.length ? (
                     <>

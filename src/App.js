@@ -5,27 +5,31 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailConteiner from "./components/ItemDetailContainer" 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound';
+import CartContextProvider from './components/context/CartContext';
+import AppContextProvider from './components/context/AppContext';
 
 
 
 
 function App() {
   return (
-    <BrowserRouter>
-    <Fragment>
-      <NavBar></NavBar>
-      <Heroimage/>
-      <Routes>
-      <Route path="/*" element={<NotFound />}></Route>
+    <AppContextProvider>
+      <CartContextProvider>
+        <BrowserRouter>
+          <Fragment>
+          <NavBar></NavBar>
+          <Heroimage/>
+            <Routes>
+              <Route path="/*" element={<NotFound />}></Route>
+              <Route path="/"  element={<ItemListContainer/>}></Route>
+              <Route path="/perfume/:perfumeId" element={<ItemDetailConteiner/>}></Route>
+            </Routes>
       
-        <Route path="/"  element={<ItemListContainer/>}></Route>
-        <Route path="/perfume/:perfumeId" element={<ItemDetailConteiner/>}></Route>
-        
-      </Routes>
       
-      
-    </Fragment>
-    </BrowserRouter>
+          </Fragment>
+        </BrowserRouter>
+      </CartContextProvider>
+    </AppContextProvider>
   );
 }
 

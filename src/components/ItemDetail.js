@@ -3,7 +3,7 @@ import Contador from './Contador';
 
 const ItemDetail = ({detalles}) => {
 
-    const {name,price,stock,thumbnail,descripcion}= detalles
+    const {name,price,stock,thumbnail,descripcion,id}= detalles
 
     const [terminar, setTerminar]=useState(false)
 
@@ -25,7 +25,7 @@ const ItemDetail = ({detalles}) => {
               {terminar ? 
                         (<button className= "btn bg-primery text-white btn-block"
                         > Terminar Compra</button>)
-                        : ( <Contador stock={stock} onAdd={onAdd}/>)
+                        : ( <Contador stock={stock} onAdd={onAdd} id={id}/>)
                       } 
              
             </div>

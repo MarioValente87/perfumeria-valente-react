@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import CartContextProvider from './components/context/CartContext';
 import AppContextProvider from './components/context/AppContext';
+import CartWidget from './components/CartWidget';
 
 
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/*" element={<NotFound />}></Route>
               <Route path="/"  element={<ItemListContainer/>}></Route>
               <Route path="/perfume/:perfumeId" element={<ItemDetailConteiner/>}></Route>
+              <Route path="/cart"  element={<CartWidget/>}></Route>
             </Routes>
       
       

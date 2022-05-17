@@ -26,7 +26,7 @@ const restHandler = () =>{
 
 
 const handleClick = (id, cantidad) => {
-    const findProduct = products.find((producto)=> producto.id ==id)
+    const findProduct = products.find((producto)=> producto.id === id)
     if(!findProduct){
         alert("Error en la base de dates")
         return
